@@ -1,76 +1,86 @@
 body {
-  background-image: url("../images/1.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
   font-family: arial;
   color: white;
   background-color: white;
 }
-.header ul {
-  background-color: #202020;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+h1 {
+  font-size: 36px;
+}
+body p {
+  padding-left: 32px;
+}
+#museumimage {
+  background-image: url("../images/1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.header li {
-  float: left;
-  padding: 0px 0px 0px 32px;
+#museumtitle {
+  font-size: 36px;
+  padding-top: 18px;
+  height: 500px;
 }
 
-.header li a {
+#museumtext {
+  line-height: 0.9;
+  background-color: #202020
+}
+#museumtext p {
+  font-size: 15px;
+}
+
+#title {
+  display: grid;
+    grid-template-columns: auto 72px;
+    grid-gap: 0;
+    background-color: #202020;
+}
+
+#title h1 {
+  padding: 18px 0 0 32px;
+}
+
+#title a {
   display: block;
+  background-color: #35b020;
   color: white;
   text-align: center;
   padding: 31px 38px;
   text-decoration: none;
 }
-
-h1 {
-  font-size: 40px;
-  padding: 18px 0px;
+#title a:hover {
+  background-color: #35c020;
 }
 
-.login {
-  background-color: #4CAF50;
-}
-
-.navigation {
+#menu {
+  background-color: white;
   display: grid;
   grid-template-columns: auto auto auto auto auto;
   padding: 1px 0;
 }
-
-.navigation > div {
+#menu div {
   background-color: #005599;
-  text-align: center;
-  padding: 20px 0;
 }
-
-.navigation a {
+#menu a {
+  padding: 20px 0;
+  display: block;
+  text-align: center;
   color: white;
   text-decoration: none;
 }
-
-.imagelabel {
-  padding: 0px 0px 450px 32px;
+#menu a:hover {
+  background-color: #2266BB;
 }
-
-.imagetext {
-  padding: 16px 32px;
-  background-color: #202020;
-}
-
-div.gallery {
-  background-color: white;
+#gallery {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #d0dce0;
   color: black;
-  margin: 32px;
-  border: 0;
-  float: left;
-  width: auto;
+  padding: 48px 32px 16px 32px;
 }
 
-div.desc {
-  font-size: 30px;
+#gallery div {
+  background-color: #d0dce0;
+  font-size: 24px;
+  font-weight: bold;
 }
